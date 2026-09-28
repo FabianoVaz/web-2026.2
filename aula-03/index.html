@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2> Formulário HTML </h2>
+
+    <form action="#" method="get">
+
+        <!-- disabled readonly required -->
+        <!--
+        Cores:
+            Hex #F00
+            RGB (0, 255, 0)
+            Nome "blue"
+        -->
+
+        <fieldset>
+            <legend> Campos básicos</legend>
+
+            <label for="">Texto</label>
+            <input type="text" name="box_nome" value="123"> <br>   <!-- Entrada de dados -->
+            
+            <label for="">Texto2</label>
+            <input type="text" name="box_nome" minlength="3"> <br>   <!-- Entrada de dados -->
+            
+            <label for="">Email</label>
+            <input type="email" name="box_email" placeholder="user@example.com"> <br>
+            
+            <label for="">Senha</label>
+            <input type="password" name="box_senha" required> <br>
+            
+            <label for="">Número</label>
+            <input type="number" min="0" max="10" step=".1"> <br>
+            
+            <label for="">Date</label>
+            <input type="date"> <br>
+            
+        </fieldset>
+        
+        <fieldset>
+            <label for="">Cor</label>
+            <input type="color" name="cor" value="#F00"> <br>
+            
+            <label for="">Arquivo</label>
+            <input type="file"> <br>
+        </fieldset>
+
+        <hr>
+        <label for="">Checkbox</label>
+        <input type="checkbox" checked> 
+        <input type="checkbox"> <br>
+        
+        <label for="">Radio</label> 
+        <input type="radio" name="radio"> 
+        <input type="radio" name="radio" checked>  <br>
+        
+        <label for="">Oculto</label> 
+        <input type="hidden"> <br>
+
+        <hr>
+        <label for="">UF</label>
+        <select>
+            <option value="BA">Bahia</option>
+            <option value="AL">Alagoas</option>
+            <option value="SE">Sergipe</option>
+            <option value="PE">Pernambuco</option>
+        </select> <br>
+
+        <label for="">Textarea</label>
+        <textarea></textarea>
+        
+        <input type="submit" value="Teste">
+        <button type="submit"> Teste 2 </button>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
