@@ -1,0 +1,61 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box}
+
+body{
+    font-family: system-ui, Arial, sans-serif; 
+    font-weight: 200;
+    background-color: white;
+}
+
+header{
+    height: 15vh; /* View Height*/
+    border-bottom: 5px solid green;
+    padding: 20px;
+    font-size: xx-large;
+}
+main{
+    height: 65vh;
+    overflow: auto;
+}
+footer{
+    height: 20vh;
+    background-color: #676565;
+    color: white;
+}
+
+.lista-eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    min-height: 100px;
+    height: 100%;
+}
+
+.card{
+    height: 150px;
+    max-width: 200px;
+    margin: 10px;
+    border: 1px solid #676565;
+    border-left: 4px solid green;
+    border-radius: 10px;
+}
+
+#evento{
+    color: green;
+    font-weight: 600;
+}
+
+.card-title{
+    font-size: large;
+    font-weight: 600;
+    padding: 5px;
+}
+.card-name{
+    font-size: medium;
+    padding: 5px;
+}
+.card-desc{
+    font-size: smaller;
+    padding: 5px;
+}

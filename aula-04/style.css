@@ -1,0 +1,58 @@
+/*
+Regra CSS
+seletor{
+    propriedade1 : valor1;
+    propriedade2 : valor2;
+    ...
+    propriedadeN : valorN;
+}
+
+Seletores:
+    - tag = 
+    - classe = .
+    - identificador = #
+    - pseudo-classe
+    - atributos = [type="text"]
+*/
+
+/* Tag */
+h2{
+    background-color: blue;
+    color: #fff;
+}
+
+/* agrupamento */
+h1, .esporte{
+    background-color: blue;
+    color: #fff;
+}
+
+/* .class */
+.esporte{
+    background-color: green;
+}
+
+/* #id */
+#teste3{
+    background-color: red;
+}
+
+/* Hierarquia: Qualquer nível */
+div .teste{
+    background-color: grey;
+}
+
+/* Hierarquia: Nível direto */
+div > .teste{
+    background-color: yellow;
+}
+
+/* Pseudo-classe */
+.teste:hover{
+    background-color: black;
+}
+
+/* Por atributo */
+[type="text"]{
+    background-color: red;
+}
