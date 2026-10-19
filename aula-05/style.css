@@ -1,0 +1,39 @@
+
+:root{
+    --nome_var: #0821c6;
+    --nome_var2: #05a33c;
+}
+
+*{ margin: 0px; padding: 0px;}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;        /* linhas x colunas */
+    align-items: center;        /* Vertical */
+    justify-content: center;    /* Horizontal */
+    gap: 20px;
+
+    background: linear-gradient(90deg, var(--nome_var2), var(--nome_var));
+}
+
+.miolo{
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    border: 2px solid gray;
+
+    display: flex;
+    flex-direction: row;        
+    align-items: center;        
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 50px;
+    width: 80px;
+    border: 1px solid gray;
+    border-top: 5px solid red;
+    border-radius: 5px;
+}
