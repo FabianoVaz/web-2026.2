@@ -1,0 +1,49 @@
+/*
+#16A34A Verde
+#64748B Cinza
+#1D283A BG
+#2563EB Azul
+#334155 Cinza Escuro
+#0F172A Preto
+*/
+
+.calculadora{
+    background-color: #1E293B;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.tela{
+    background-color: #0F172A;
+    color: #fff;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 0px 5px #ccc;
+    overflow: hidden;
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.teclado button{
+    background-color: #334155;
+    height: 60px;
+    color: #fff;
+    font-size: large;
+    border: 1px solid #334155;
+    border-radius: 10px;
+}
+
+.duplo{ grid-column: span 2;}
+
+.teclado .funcao{ background-color: #64748B;}
+.teclado .operacao{ background-color: #2563EB;}
+.teclado .igual{ background-color: #16A34A;}

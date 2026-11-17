@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .circle{
+            background-color: aquamarine;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="miolo" id="miolo">
+        <label for="username">Usuário</label>
+        <input type="text" id="username"> <br>
+        
+        <label for="senha">Senha</label>
+        <input type="password" id="senha"> <br>
+
+        <span id="info" style="color: brown;" data-teste="abc">123</span> <br>
+
+        <button id="btn-entrar"> Entrar </button>
+        <button id="btn-ver-senha"> Ver senha </button>
+
+        
+        <div class="circle" id="circle"></div>
+    </div>
+
+    <script>
+        const miolo = document.querySelector("#miolo");
+        miolo.addEventListener('keydown', (event) => {
+            if(event.key == "ArrowLeft"){
+                const circulo = document.querySelector("#circle")
+                circulo.style.transform += 'translateX(-20px)'; 
+            }
+            if(event.key == "ArrowRight"){
+                const circulo = document.querySelector("#circle")
+                circulo.style.transform += 'translateX(20px)'; 
+            }
+        });
+        
+        const retorno = document.querySelector("#info");
+
+        const ver_senha = document.querySelector("#btn-ver-senha");
+        //ver_senha.addEventListener("click", verSenha);
+        //ver_senha.addEventListener("dblclick", verSenha);
+        //ver_senha.addEventListener("mouseenter", teste);
+        //ver_senha.addEventListener("mouseleave", teste2);
+        //ver_senha.addEventListener("mousedown", teste);
+        //ver_senha.addEventListener("mouseup", teste2);
+        //ver_senha.addEventListener("keydown", teste);
+        //ver_senha.addEventListener("keyup", teste2);
+
+        function teste(){
+            retorno.style.backgroundColor = "red";
+            retorno.textContent = "A"
+        }
+        function teste2(){
+            retorno.style.backgroundColor = "green";
+            retorno.textContent = "B"
+        }
+
+        function verSenha(){
+            const senha = document.querySelector("#senha");
+            senha.type = "text";
+        }
+
+        function logar(){
+            const username = document.querySelector("#username");
+            const senha = document.querySelector("#senha");
+
+            if( username.value == "admin" && senha.value == "123"){
+                retorno.style.color = "green";
+                retorno.textContent = "Usuário Logado!!";
+            }else{
+                retorno.style.color = "red";
+                retorno.textContent = "Usuário inválido!!";
+            }
+        }
+    </script>
+</body>
+</html>
